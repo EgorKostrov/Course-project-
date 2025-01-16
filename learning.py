@@ -11,7 +11,7 @@ model = WhisperForConditionalGeneration.from_pretrained(model_name).to(device)
 processor = WhisperProcessor.from_pretrained(model_name)
 
 # Загрузка данных Mozilla Common Voice (русский язык)
-dataset = ("/content/drive/My Drive/common_voice_20_0", "ru")
+dataset = ("/content/drive/My Drive/common_voice_20_0")
 
 # Подготовка данных
 def preprocess_function(batch):
